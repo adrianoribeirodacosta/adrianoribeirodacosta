@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adriano - Landing Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='16' fill='%23007bff'%3EAC%3C/text%3E%3C/svg%3E" type="image/svg+xml">    
+</head>
+<body>
+
+    <header class="main-header">        
+        <div class="header-content">
+            <h1 class="my-name">Adriano Ribeiro da Costa</h1>
+            <p class="tagline">Full-Stack developer!</p>
+            <img src="https://raw.githubusercontent.com/adrianoribeirodacosta/adrianoribeirodacosta/refs/heads/main/assets/img/minha-foto.jpg" alt="Minha Foto" class="profile-photo">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#sobre-mim">Sobre Mim</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#inspiracao">Minha Inspiração</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li>
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="toggle-dark">
+                                <input type="checkbox" id="toggle-dark" name="toggle-dark" />
+                                <span class="slider round">
+                                    <span class="icon sun">
+                                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione" preserveAspectRatio="xMidYMid meet" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="#ffce31"> <circle cx="22" cy="24" r="9.3"> </circle> <path d="M25.7 13.1L22 4l-3.7 9.1c1.2-.2 2.5-.3 3.7-.3c1.3 0 2.5.1 3.7.3"> </path> <path d="M18.3 34.9L22 44l3.7-9.1c-1.2.2-2.5.3-3.7.3c-1.3 0-2.5-.1-3.7-.3"> </path> <path d="M32.9 27.7L42 24l-9.1-3.7c.2 1.2.3 2.5.3 3.7c0 1.3-.1 2.5-.3 3.7"> </path> <path d="M11.1 20.3L2 24l9.1 3.7c-.2-1.2-.3-2.5-.3-3.7c0-1.3.1-2.5.3-3.7"> </path> <path d="M32.3 19l3.8-9.1l-9.1 3.8c1 .7 2 1.5 2.9 2.4c.9.9 1.7 1.8 2.4 2.9"> </path> <path d="M11.7 29l-3.8 9.1l9.1-3.8c-1-.7-2-1.5-2.9-2.4c-.9-.9-1.7-1.8-2.4-2.9"> </path> <path d="M27 34.3l9.1 3.8l-3.8-9.1c-.7 1-1.5 2-2.4 2.9c-.9.9-1.8 1.7-2.9 2.4"> </path> <path d="M17 13.7L7.9 9.9l3.8 9.1c.7-1 1.5-2 2.4-2.9c.9-.9 1.8-1.7 2.9-2.4"> </path> </g> <path d="M17.2 58.1c-1 0-2-.2-2.9-.5c-3.8-1.3-6.4-4.9-6.4-9c0-2.7 1.2-5.3 3.2-7.1c.5-.5 1.1-.9 1.7-1.2l.6-2.2c1.5-5.5 6.5-9.3 12.1-9.3c.6 0 1.1 0 1.8.1l1.5.3l.2-.5c2.3-4.1 6.6-6.7 11.2-6.7C47.3 22 53 27.8 53 35v1.3c.5.2 1.1.5 1.6.8c3.4 2 5.5 5.7 5.5 9.7c0 5.2-3.5 9.7-8.6 10.9c-.8.2-1.7.3-2.5.3l-31.8.1" fill="#ffffff"> </path> <path d="M40.3 24.1c6 0 10.9 5 10.9 11.1v.9c-2.5.2-4.8 1.2-6.6 2.8c1.3-.8 2.9-1.2 4.6-1.2c.6 0 1.2.1 1.8.2c1 .2 1.9.6 2.8 1.1c2.7 1.6 4.6 4.6 4.6 8c0 4.4-3 8.1-7.1 9c-.7.2-1.3.2-2.1.2h-32c-.8 0-1.6-.1-2.3-.4c-3-1-5.1-3.8-5.1-7.2c0-2.3 1-4.3 2.6-5.7c.7-.6 1.5-1.1 2.4-1.4c.8-.3 1.6-.4 2.5-.4c2.4 0 4.5 1.2 5.9 2.9h.1c-1.6-3-4.5-5-8-5.4c1.3-4.6 5.4-7.9 10.3-7.9c.5 0 1 .1 1.5.1c1 .1 1.9.4 2.8.8c3.3 1.5 5.7 4.6 6.3 8.4v-.1c0-4.3-2.2-8-5.4-10.2c1.8-3.3 5.3-5.6 9.5-5.6m0-3.7c-5 0-9.7 2.6-12.4 6.9h-.3c-.8-.1-1.4-.2-2.1-.2c-6.4 0-12.2 4.4-13.9 10.6l-.4 1.5c-.5.3-.9.6-1.3 1C7.4 42.3 6 45.4 6 48.7c0 4.9 3.1 9.2 7.7 10.8c1.1.4 2.3.6 3.5.6h31.9c1 0 1.9-.1 2.9-.3c5.9-1.4 10-6.6 10-12.7c0-4.6-2.5-9-6.5-11.3l-.6-.3v-.1c0-8.4-6.5-15-14.6-15z" fill="#75d6ff"> </path> </g></g></svg>
+                                    </span>
+                                    <span class="icon moon">
+                                        <svg height="200px" width="200px" version="1.1" id="_x34_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path style="fill:#F4F4F5;" d="M426.655,444.491c-85.064,74.278-206.9,83.839-299.319,29.581 c-22.308-13.074-42.982-29.907-60.958-50.499C56,411.723,46.93,399.058,39.085,385.82C15.143,345.045,3.539,298.958,3.784,252.953 c0.49-71.582,29.989-142.754,87.026-192.6C138.776,18.433,197.855-1.096,256.69,0.047c45.597,0.817,91.03,13.973,131.069,38.733 c22.063,13.564,42.41,30.724,60.305,51.153c9.724,11.114,18.386,22.799,25.822,34.974 C537.623,227.785,521.117,361.878,426.655,444.491z"></path> <path style="fill:#EDEDEC;" d="M107.7,89.244c99.915-87.35,248.817-74.175,333.815,23.051 c84.998,97.226,75.388,243.379-24.528,330.729c-99.915,87.35-251.727,82.317-336.725-14.908S7.784,176.594,107.7,89.244z"></path> <g> <path style="fill:#D8D8D8;" d="M244.029,141.49c-17.92,37.27-63.032,51.341-100.302,33.421 c-37.27-17.92-53.234-61.357-35.315-98.627c17.92-37.27,62.835-54.046,100.105-36.126 C245.787,58.078,261.948,104.22,244.029,141.49z"></path> <path style="opacity:0.06;fill:#040000;" d="M128.086,97.65c17.92-37.27,62.835-54.046,100.105-36.126 c4.127,1.984,7.994,4.316,11.586,6.942c-7.335-11.909-17.95-21.909-31.26-28.308c-37.27-17.92-82.185-1.144-100.105,36.126 c-15.805,32.872-5.247,70.538,23.036,91.265C118.963,147.091,116.789,121.146,128.086,97.65z"></path> </g> <path style="fill:#D8D8D8;" d="M217.121,218.367c-1.17-5.733,2.71-11.178,8.442-12.348c5.733-1.17,11.248,2.359,12.418,8.091 c1.17,5.733-2.456,11.466-8.189,12.635C224.06,227.916,218.291,224.099,217.121,218.367z"></path> <path style="opacity:0.5;fill:#FFFFFF;" d="M363.151,96.945c-1.17-5.733,2.71-11.178,8.442-12.348s11.248,2.359,12.418,8.091 c1.17,5.733-2.456,11.466-8.189,12.636C370.089,106.493,364.32,102.677,363.151,96.945z"></path> <path style="fill:#D8D8D8;" d="M282.752,398.389c8.691-7.598,21.813-6.256,29.411,2.435c7.598,8.691,6.926,21.591-1.765,29.189 c-8.691,7.598-22.059,6.972-29.657-1.719C273.143,419.603,274.061,405.987,282.752,398.389z"></path> <path style="opacity:0.5;fill:#FFFFFF;" d="M58.327,220.961c-1.17-5.733,2.71-11.178,8.442-12.348 c5.733-1.17,11.248,2.359,12.418,8.091s-2.456,11.466-8.189,12.636C65.265,230.51,59.496,226.694,58.327,220.961z"></path> <path style="fill:#D8D8D8;" d="M468.947,281.701c-3.725,36.649-37.256,62.098-73.905,58.373 c-36.649-3.725-63.177-35.279-59.452-71.928c3.725-36.649,36.272-64.305,72.921-60.58 C445.16,211.292,472.673,245.052,468.947,281.701z"></path> <g> <path style="fill:#D8D8D8;" d="M173.239,331.136c14.631,25.328,4.867,57.294-20.461,71.925 c-25.328,14.631-57.07,6.642-71.701-18.686c-14.631-25.328-6.526-58.257,18.802-72.888 C125.206,296.855,158.608,305.808,173.239,331.136z"></path> <path style="opacity:0.06;fill:#040000;" d="M112.818,324.329c18.464-10.666,41.21-8.787,57.855,2.82 c-15.693-22.238-46.847-29.497-70.794-15.663c-25.328,14.631-33.433,47.561-18.802,72.888c4.04,6.993,9.388,12.657,15.541,16.895 c-0.915-1.299-1.788-2.644-2.602-4.052C79.385,371.89,87.49,338.96,112.818,324.329z"></path> </g> <path style="opacity:0.06;fill:#040000;" d="M349.701,282.093c3.725-36.649,36.272-64.305,72.921-60.579 c12.217,1.242,23.415,5.824,32.783,12.735c-11.007-14.534-27.694-24.73-46.893-26.682c-36.649-3.725-69.196,23.93-72.921,60.579 c-2.465,24.247,8.316,46.261,26.506,59.464C352.777,315.06,347.969,299.128,349.701,282.093z"></path> </g> <path style="opacity:0.1;fill:#040000;" d="M254.81,381.707c-105.358,0-198.419-52.064-254.72-131.654 c-2.703,99.72,55.552,194.334,153.936,236.742c128.773,55.507,279.648,1.534,335.155-127.239 c15.267-35.419,21.657-72.747,20.288-109.416C453.162,329.68,360.13,381.707,254.81,381.707z"></path> </g> </g></svg>
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre-mim" class="section-content">
+            <h2>Sobre Mim</h2>
+            
+            <div class="about-content-wrapper">
+                <div class="about-image">
+                    <img src="https://raw.githubusercontent.com/adrianoribeirodacosta/adrianoribeirodacosta/refs/heads/main/assets/img/workspace.jpg" alt="Imagem que complementa o Sobre Mim">
+                </div>
+                <div class="about-text">
+                    <p>
+                        Olá, meu nome é Adriano Ribeiro da Costa, sou um desenvolvedor apaixonado por criar soluções inovadoras. Com alguns anos de experiência, trago 
+                        comigo o conhecimento em algumas tecnologias e linguagens de programação.<br><br>
+
+                        Minha trajetória é marcada por projetos desafiadores e bem-sucedidos, sempre buscando a excelência e a satisfação do cliente.
+                        Acredito que a colaboração e a comunicação transparente são fundamentais para o sucesso de qualquer empreendimento.<br><br>
+
+                        Além do desenvolvimento, sou um entusiasta por novas tecnologias e estou sempre atualizado com as últimas tendências do mercado.
+                        Minha paixão por aprender e inovar me impulsiona a buscar soluções criativas e eficientes para os problemas mais complexos.                        
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section-content">
+            <h2>Minhas Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title>HTML5</title>
+                            <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
+                        </svg>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Estruturação semântica de conteúdo web, garantindo acessibilidade e otimização para motores de busca.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"/>
+                            <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"/><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"/><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"/><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"/><path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"/>
+                        </svg>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Estilização avançada com Flexbox e Grid Layout, animações e design responsivo para diversas telas.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">                        
+                        <svg viewBox="0 0 128 128">
+                            <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path><path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"></path>
+                        </svg>          
+                    </div>
+                    <h3>JavaScript (ES6+)</h3>
+                    <p>Desenvolvimento de funcionalidades interativas e dinâmicas, manipulação do DOM e consumo de APIs RESTful.</p>
+                </div>
+                <div class="skill-card skill-card--php">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 128 128">
+                            <path fill="url(#a)" d="M0 64c0 18.593 28.654 33.667 64 33.667 35.346 0 64-15.074 64-33.667 0-18.593-28.655-33.667-64-33.667C28.654 30.333 0 45.407 0 64Z"></path><path fill="#777bb3" d="M64 95.167c33.965 0 61.5-13.955 61.5-31.167 0-17.214-27.535-31.167-61.5-31.167S2.5 46.786 2.5 64c0 17.212 27.535 31.167 61.5 31.167Z"></path><path d="M34.772 67.864c2.793 0 4.877-.515 6.196-1.53 1.306-1.006 2.207-2.747 2.68-5.175.44-2.27.272-3.854-.5-4.71-.788-.874-2.493-1.317-5.067-1.317h-4.464l-2.473 12.732zM20.173 83.547a.694.694 0 0 1-.68-.828l6.557-33.738a.695.695 0 0 1 .68-.561h14.134c4.442 0 7.748 1.206 9.827 3.585 2.088 2.39 2.734 5.734 1.917 9.935-.333 1.711-.905 3.3-1.7 4.724a15.818 15.818 0 0 1-3.128 3.92c-1.531 1.432-3.264 2.472-5.147 3.083-1.852.604-4.232.91-7.07.91h-5.724l-1.634 8.408a.695.695 0 0 1-.682.562z"></path><path fill="#fff" d="M34.19 55.826h3.891c3.107 0 4.186.682 4.553 1.089.607.674.723 2.097.331 4.112-.439 2.257-1.253 3.858-2.42 4.756-1.194.92-3.138 1.386-5.773 1.386h-2.786l2.205-11.342zm6.674-8.1H26.731a1.39 1.39 0 0 0-1.364 1.123L18.81 82.588a1.39 1.39 0 0 0 1.363 1.653h7.35a1.39 1.39 0 0 0 1.363-1.124l1.525-7.846h5.151c2.912 0 5.364-.318 7.287-.944 1.977-.642 3.796-1.731 5.406-3.237a16.522 16.522 0 0 0 3.259-4.087c.831-1.487 1.429-3.147 1.775-4.931.86-4.423.161-7.964-2.076-10.524-2.216-2.537-5.698-3.823-10.349-3.823zM30.301 68.557h4.471c2.963 0 5.17-.557 6.62-1.675 1.451-1.116 2.428-2.98 2.938-5.591.485-2.508.264-4.277-.665-5.308-.931-1.03-2.791-1.546-5.584-1.546h-5.036l-2.743 14.12m10.563-19.445c4.252 0 7.353 1.117 9.303 3.348 1.95 2.232 2.536 5.347 1.76 9.346-.322 1.648-.863 3.154-1.625 4.518-.764 1.366-1.76 2.614-2.991 3.747-1.468 1.373-3.097 2.352-4.892 2.935-1.794.584-4.08.875-6.857.875h-6.296l-1.743 8.97h-7.35l6.558-33.739h14.133"></path><path d="M69.459 74.577a.694.694 0 0 1-.682-.827l2.9-14.928c.277-1.42.209-2.438-.19-2.87-.245-.263-.979-.704-3.15-.704h-5.256l-3.646 18.768a.695.695 0 0 1-.683.56h-7.29a.695.695 0 0 1-.683-.826l6.558-33.739a.695.695 0 0 1 .682-.561h7.29a.695.695 0 0 1 .683.826L64.41 48.42h5.653c4.307 0 7.227.758 8.928 2.321 1.733 1.593 2.275 4.14 1.608 7.573l-3.051 15.702a.695.695 0 0 1-.682.56h-7.407z"></path><path fill="#fff" d="M65.31 38.755h-7.291a1.39 1.39 0 0 0-1.364 1.124l-6.557 33.738a1.39 1.39 0 0 0 1.363 1.654h7.291a1.39 1.39 0 0 0 1.364-1.124l3.537-18.205h4.682c2.168 0 2.624.463 2.641.484.132.14.305.795.019 2.264l-2.9 14.927a1.39 1.39 0 0 0 1.364 1.654h7.408a1.39 1.39 0 0 0 1.363-1.124l3.051-15.7c.715-3.686.103-6.45-1.82-8.217-1.836-1.686-4.91-2.505-9.398-2.505h-4.81l1.421-7.315a1.39 1.39 0 0 0-1.364-1.655zm0 1.39-1.743 8.968h6.496c4.087 0 6.907.714 8.457 2.14 1.553 1.426 2.017 3.735 1.398 6.93l-3.052 15.699h-7.407l2.901-14.928c.33-1.698.208-2.856-.365-3.474-.573-.617-1.793-.926-3.658-.926h-5.829l-3.756 19.327H51.46l6.558-33.739h7.292z"></path><path d="M92.136 67.864c2.793 0 4.878-.515 6.198-1.53 1.304-1.006 2.206-2.747 2.679-5.175.44-2.27.273-3.854-.5-4.71-.788-.874-2.493-1.317-5.067-1.317h-4.463l-2.475 12.732zM77.54 83.547a.694.694 0 0 1-.682-.828l6.557-33.738a.695.695 0 0 1 .682-.561H98.23c4.442 0 7.748 1.206 9.826 3.585 2.089 2.39 2.734 5.734 1.917 9.935a15.878 15.878 0 0 1-1.699 4.724 15.838 15.838 0 0 1-3.128 3.92c-1.530 1.432-3.265 2.472-5.147 3.083-1.852.604-4.232.91-7.071.91h-5.723l-1.633 8.408a.695.695 0 0 1-.683.562z"></path><path fill="#fff" d="M91.555 55.826h3.891c3.107 0 4.186.682 4.552 1.089.61.674.724 2.097.333 4.112-.44 2.257-1.254 3.858-2.421 4.756-1.195.92-3.139 1.386-5.773 1.386h-2.786l2.204-11.342zm6.674-8.1H84.096a1.39 1.39 0 0 0-1.363 1.123l-6.558 33.739a1.39 1.39 0 0 0 1.364 1.653h7.35a1.39 1.39 0 0 0 1.363-1.124l1.525-7.846h5.15c2.911 0 5.364-.318 7.286-.944 1.978-.642 3.797-1.731 5.408-3.238a16.52 16.52 0 0 0 3.258-4.086c.832-1.487 1.428-3.147 1.775-4.931.86-4.423.162-7.964-2.076-10.524-2.216-2.537-5.697-3.823-10.35-3.823zM87.666 68.557h4.47c2.964 0 5.17-.557 6.622-1.675 1.45-1.116 2.428-2.98 2.936-5.591.487-2.508.266-4.277-.665-5.308-.93-1.03-2.791-1.546-5.583-1.546h-5.035Zm10.563-19.445c4.251 0 7.354 1.117 9.303 3.348 1.95 2.232 2.537 5.347 1.759 9.346-.32 1.648-.862 3.154-1.624 4.518-.763 1.366-1.76 2.614-2.992 3.747-1.467 1.373-3.097 2.352-4.892 2.935-1.793.584-4.078.875-6.856.875h-6.295l-1.745 8.97h-7.35l6.558-33.739h14.133"></path><defs><radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(84.04136 0 0 84.04136 38.426 42.169)" gradientUnits="userSpaceOnUse"><stop stop-color="#AEB2D5"></stop><stop offset=".3" stop-color="#AEB2D5"></stop><stop offset=".75" stop-color="#484C89"></stop><stop offset="1" stop-color="#484C89"></stop></radialGradient></defs>
+                        </svg>
+                    </div>
+                    <h3>PHP</h3>
+                    <p>Desenvolvimento back-end robusto para aplicações web, sistemas de gerenciamento e APIs.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 128 128">
+                            <path fill="#0868AC" d="M9.625 32.181C-1.404 48.032-.031 68.657 8.394 85.501c.2.404.41.801.617 1.198l.394.759.246.437.439.786c.262.461.53.92.804 1.379l.459.756c.304.491.615.976.933 1.46l.398.614c.439.655.888 1.309 1.352 1.951l.039.05.228.308c.401.553.814 1.099 1.232 1.639l.464.59c.373.469.752.935 1.138 1.399l.435.52a75.27 75.27 0 001.586 1.812l.033.033.061.068a80.44 80.44 0 001.612 1.699l.517.521c.423.426.853.845 1.287 1.262l.527.5c.58.547 1.166 1.083 1.764 1.607l.028.022.307.262c.527.456 1.063.909 1.603 1.353l.664.529c.441.354.887.702 1.336 1.044l.714.543c.496.365.995.724 1.499 1.075l.546.387.15.107c.478.329.967.646 1.456.963l.63.42c.75.474 1.51.943 2.279 1.396l.63.355c.565.326 1.134.646 1.71.959.312.168.632.327.946.488.407.213.811.429 1.225.636l.283.137.501.242c.641.306 1.287.607 1.94.897l.41.184a66.92 66.92 0 002.263.941l.551.217c.704.271 1.418.539 2.135.791l.268.093c.787.275 1.581.53 2.381.779l.575.172c.814.245 1.619.538 2.458.693 53.339 9.727 68.833-32.053 68.833-32.053-13.013 16.953-36.111 21.425-57.996 16.446-.829-.187-1.633-.446-2.442-.685l-.609-.185a72.498 72.498 0 01-2.352-.765l-.323-.117a72.245 72.245 0 01-2.074-.769l-.582-.229c-.752-.297-1.5-.607-2.239-.931l-.447-.198a92.857 92.857 0 01-1.889-.879l-.546-.262c-.491-.239-.977-.493-1.461-.743-.324-.171-.654-.332-.975-.51a58.591 58.591 0 01-1.751-.982l-.591-.33a81.221 81.221 0 01-2.28-1.397l-.615-.41a59.283 59.283 0 01-1.623-1.079l-.522-.367a89.287 89.287 0 01-1.534-1.109l-.679-.514a64.473 64.473 0 01-1.384-1.082l-.617-.495a82.693 82.693 0 01-1.724-1.453l-.189-.159a83.466 83.466 0 01-1.812-1.647l-.511-.491c-.441-.42-.875-.843-1.302-1.277l-.51-.509a70.541 70.541 0 01-1.598-1.69l-.079-.084a67.39 67.39 0 01-1.621-1.844l-.424-.504a70.602 70.602 0 01-1.167-1.442l-.427-.532a78.406 78.406 0 01-1.347-1.794c-12.15-16.574-16.516-39.432-6.805-58.204m25.629-2.434c-7.977 11.478-7.543 26.844-1.321 38.983a50.581 50.581 0 003.528 5.889c1.195 1.713 2.52 3.751 4.106 5.127a48.111 48.111 0 001.79 1.858l.472.465a51.69 51.69 0 001.828 1.698l.074.064.018.018a55.268 55.268 0 002.135 1.767l.485.378a54.08 54.08 0 002.233 1.631l.065.049c.336.232.678.448 1.019.672l.483.319c.544.349 1.095.689 1.655 1.015l.235.136c.483.278.972.552 1.463.818l.521.271c.339.177.678.358 1.023.53l.155.07c.703.346 1.412.68 2.136.995l.472.194c.579.246 1.164.486 1.75.71l.75.275c.533.198 1.068.378 1.607.559l.727.233c.767.238 1.525.539 2.324.672 41.183 6.823 50.691-24.886 50.691-24.886-8.57 12.343-25.168 18.233-42.879 13.635a50.376 50.376 0 01-2.333-.674l-.701-.227a45.423 45.423 0 01-1.631-.562l-.736-.274a56.418 56.418 0 01-1.756-.708l-.473-.2a47.728 47.728 0 01-2.148-.999c-.363-.177-.72-.364-1.078-.548l-.622-.32a44.502 44.502 0 01-1.363-.77l-.326-.185a47.844 47.844 0 01-1.651-1.008l-.498-.332a61.759 61.759 0 01-1.069-.707 57.456 57.456 0 01-2.226-1.628l-.501-.395c-7.752-6.12-13.898-14.486-16.819-23.971-3.062-9.836-2.402-20.878 2.903-29.84m22.278-.775c-4.702 6.92-5.164 15.514-1.901 23.156 3.441 8.113 10.491 14.476 18.72 17.495.339.125.679.237 1.022.354l.451.143c.485.152.966.329 1.467.424 22.74 4.394 28.908-11.669 30.549-14.034-5.402 7.779-14.482 9.646-25.623 6.942-.88-.213-1.847-.531-2.695-.832a33.242 33.242 0 01-3.201-1.329 33.215 33.215 0 01-5.612-3.424c-9.969-7.565-16.162-21.994-9.657-33.745"></path>
+                        </svg>
+                    </div>
+                    <h3>jQuery</h3>
+                    <p>Manipulação eficiente do DOM, eventos e animações para interatividade web.</p>
+                </div>
+                <div class="skill-card skill-card--mysql">
+                    <div class="skill-icon">                        
+                        <svg viewBox="0 0 128 128">
+                            <path fill="#00618A" d="M117.688 98.242c-6.973-.191-12.297.461-16.852 2.379-1.293.547-3.355.559-3.566 2.18.711.746.82 1.859 1.387 2.777 1.086 1.754 2.922 4.113 4.559 5.352 1.789 1.348 3.633 2.793 5.551 3.961 3.414 2.082 7.223 3.27 10.504 5.352 1.938 1.23 3.859 2.777 5.75 4.164.934.684 1.563 1.75 2.773 2.18v-.195c-.637-.812-.801-1.93-1.387-2.777l-2.578-2.578c-2.52-3.344-5.719-6.281-9.117-8.719-2.711-1.949-8.781-4.578-9.91-7.73l-.199-.199c1.922-.219 4.172-.914 5.949-1.391 2.98-.797 5.645-.59 8.719-1.387l4.164-1.187v-.793c-1.555-1.594-2.664-3.707-4.359-5.152-4.441-3.781-9.285-7.555-14.273-10.703-2.766-1.746-6.184-2.883-9.117-4.363-.988-.496-2.719-.758-3.371-1.586-1.539-1.961-2.379-4.449-3.566-6.738-2.488-4.793-4.93-10.023-7.137-15.066-1.504-3.437-2.484-6.828-4.359-9.91-9-14.797-18.687-23.73-33.695-32.508-3.195-1.867-7.039-2.605-11.102-3.57l-6.543-.395c-1.332-.555-2.715-2.184-3.965-2.977C16.977 3.52 4.223-3.312.539 5.672-1.785 11.34 4.016 16.871 6.09 19.746c1.457 2.012 3.32 4.273 4.359 6.539.688 1.492.805 2.984 1.391 4.559 1.438 3.883 2.695 8.109 4.559 11.695.941 1.816 1.98 3.727 3.172 5.352.727.996 1.98 1.438 2.18 2.973-1.227 1.715-1.297 4.375-1.984 6.543-3.098 9.77-1.926 21.91 2.578 29.137 1.383 2.223 4.641 6.98 9.117 5.156 3.918-1.598 3.043-6.539 4.164-10.902.254-.988.098-1.715.594-2.379v.199l3.57 7.133c2.641 4.254 7.324 8.699 11.297 11.699 2.059 1.555 3.68 4.242 6.344 5.152v-.199h-.199c-.516-.805-1.324-1.137-1.98-1.781-1.551-1.523-3.277-3.414-4.559-5.156-3.613-4.902-6.805-10.27-9.711-15.855-1.391-2.668-2.598-5.609-3.77-8.324-.453-1.047-.445-2.633-1.387-3.172-1.281 1.988-3.172 3.598-4.164 5.945-1.582 3.754-1.789 8.336-2.375 13.082-.348.125-.195.039-.398.199-2.762-.668-3.73-3.508-4.758-5.949-2.594-6.164-3.078-16.09-.793-23.191.59-1.836 3.262-7.617 2.18-9.316-.516-1.691-2.219-2.672-3.172-3.965-1.18-1.598-2.355-3.703-3.172-5.551-2.125-4.805-3.113-10.203-5.352-15.062-1.07-2.324-2.875-4.676-4.359-6.738-1.645-2.289-3.484-3.977-4.758-6.742-.453-.984-1.066-2.559-.398-3.566.215-.684.516-.969 1.191-1.191 1.148-.887 4.352.297 5.547.793 3.18 1.32 5.832 2.578 8.527 4.363 1.289.855 2.598 2.512 4.16 2.973h1.785c2.789.641 5.914.195 8.523.988 4.609 1.402 8.738 3.582 12.488 5.949 11.422 7.215 20.766 17.48 27.156 29.734 1.027 1.973 1.473 3.852 2.379 5.945 1.824 4.219 4.125 8.559 5.941 12.688 1.816 4.113 3.582 8.27 6.148 11.695 1.348 1.801 6.551 2.766 8.918 3.766 1.66.699 4.379 1.43 5.949 2.379 3 1.809 5.906 3.965 8.723 5.945 1.402.992 5.73 3.168 5.945 4.957zm-88.605-75.52c-1.453-.027-2.48.156-3.566.395v.199h.195c.695 1.422 1.918 2.34 2.777 3.566l1.98 4.164.199-.195c1.227-.867 1.789-2.25 1.781-4.363-.492-.52-.562-1.164-.992-1.785-.562-.824-1.66-1.289-2.375-1.98zm0 0"></path>
+                        </svg>          
+                    </div>
+                    <h3>MySQL</h3>
+                    <p>Gerenciamento e otimização de bancos de dados relacionais para armazenamento e recuperação de dados.</p>
+                </div>
+                <div class="skill-card skill-card--python">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 128 128">
+                            <linearGradient id="python-original-a" gradientUnits="userSpaceOnUse" x1="70.252" y1="1237.476" x2="170.659" y2="1151.089" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#5A9FD4"></stop><stop offset="1" stop-color="#306998"></stop></linearGradient><linearGradient id="python-original-b" gradientUnits="userSpaceOnUse" x1="209.474" y1="1098.811" x2="173.62" y2="1149.537" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#FFD43B"></stop><stop offset="1" stop-color="#FFE873"></stop></linearGradient><path fill="url(#python-original-a)" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z" transform="translate(0 10.26)"></path><path fill="url(#python-original-b)" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z" transform="translate(0 10.26)"></path><radialGradient id="python-original-c" cx="1825.678" cy="444.45" r="26.743" gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B8B8B8" stop-opacity=".498"></stop><stop offset="1" stop-color="#7F7F7F" stop-opacity="0"></stop></radialGradient><path opacity=".444" fill="url(#python-original-c)" d="M97.309 119.597c0 3.543-14.816 6.416-33.091 6.416-18.276 0-33.092-2.873-33.092-6.416 0-3.544 14.815-6.417 33.092-6.417 18.275 0 33.091 2.872 33.091 6.417z"></path>
+                        </svg>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Desenvolvimento de scripts, automação, análise de dados e aplicações web com frameworks como Flask/Django.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">    
+                        <svg viewBox="0 0 128 128">
+                            <g fill="#181616"><path fill-rule="evenodd" clip-rule="evenodd" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"></path><path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"></path></g>
+                        </svg>
+                    </div>
+                    <h3>Git & GitHub</h3>
+                    <p>Controle de versão de projetos, colaboração em equipes e gerenciamento de repositórios.</p>
+                </div>
+                <div class="skill-card skill-card--fluig">
+                    <div class="skill-icon">
+                        <svg
+                            version="1.1"
+                            id="svg1"
+                            width="139.2"
+                            height="183.03999"
+                            viewBox="0 0 139.2 183.03999"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:svg="http://www.w3.org/2000/svg">
+                            <defs
+                                id="defs1" />
+                            <g
+                                id="g1">
+                                <image
+                                width="139.2"
+                                height="183.03999"
+                                preserveAspectRatio="none"
+                                xlink:href="data:image/png;base64,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&#10;"
+                                id="image1" />
+                            </g>
+                        </svg>
+                    </div>
+                    <h3>Fluig Framework</h3>
+                    <p>Desenvolvimento de soluções para gestão de processos (BPM), documentos (ECM) e colaboração em equipe.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                width="800px" height="800px" viewBox="0 0 47.168 47.168"
+                                xml:space="preserve">
+                            <g>
+                                <g id="Layer_69_5_">
+                                    <g>
+                                        <path d="M47.168,36.918V6.699H0v30.219h19.252v1.945H9.188v1.605h28.179v-1.605h-9.846v-1.945H47.168z M3.45,32.469V10.149
+                                            h40.267v22.317H3.45V32.469z"/>
+                                        <path d="M20.955,25.379h-9.363l-2.774,0.139v1.91H27.1v-2.049h-5.596H20.955z M23.955,26.637h-5.777v-0.383h5.777V26.637z"/>
+                                        <polygon points="13.036,13.521 29.425,13.521 29.425,13.99 30.87,13.99 30.87,12.076 11.592,12.076 11.592,24.789 27.098,24.789 
+                                            27.098,23.345 13.036,23.345 			"/>
+                                        <path d="M27.907,29.82h10.036V14.764H27.907V29.82z M33.137,29.064c-0.268,0-0.482-0.217-0.482-0.482
+                                            c0-0.268,0.216-0.484,0.482-0.484c0.268,0,0.484,0.217,0.484,0.484C33.621,28.848,33.404,29.064,33.137,29.064z M29.357,16.215
+                                            h7.137l-0.001,11.109h-7.136V16.215z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <h3>Responsividade</h3>
+                    <p>Criação de layouts adaptáveis que proporcionam excelente experiência em qualquer dispositivo.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.0000028,10.0274647 C18.2499767,10.2761881 20,12.1837241 20,14.5 L20,23.5 C20,23.7761424 19.7761424,24 19.5,24 C19.2238576,24 19,23.7761424 19,23.5 L19,14.5 C19,12.7367649 17.6961483,11.2780607 16.0000025,11.0354448 L16.0000004,17.0000001 C16.0000001,18.1045697 15.1045695,19 14,19 C13.1070639,19 12.3181616,18.7603614 11.6483895,18.2805904 C11.3936762,18.0981342 11.0882218,18.0000201 10.7744978,18.00002 C10.5173225,18 10.3107499,18.1488891 10.2371708,18.3696264 C10.1262259,18.7024611 10.1927988,19.0267989 10.3989304,19.258697 L13.8737047,23.1678181 C14.0571637,23.3742095 14.0385733,23.6902457 13.8321819,23.8737047 C13.6257905,24.0571637 13.3097543,24.0385733 13.1262953,23.8321819 L10.5999236,20.9900137 C10.5676363,20.9965624 10.5342196,21 10.5,21 L6.5,21 C5.11928813,21 4,19.8807119 4,18.5 L4,2.49996197 C4,1.11925009 5.11928813,-3.80312054e-05 6.49999996,-3.80312054e-05 L13.5000061,-3.8628686e-05 C14.880718,-3.82162116e-05 16.0000058,1.11925024 16.0000054,2.49996214 L16.0000028,10.0274647 Z M9.65152107,19.9230609 C9.20775136,19.4238199 9.06443026,18.7255704 9.27565835,18.0918861 C9.49818066,17.4243192 10.0868921,17 10.7504045,17.0000002 C11.2971043,17.0000201 11.8061976,17.1635445 12.230722,17.4676397 C12.7259511,17.822382 13.3106783,18 14,18 C14.5522849,18 15.0000003,17.5522847 15.0000004,16.9999998 L15.0000054,2.49996182 C15.0000056,1.67153469 14.328433,0.999961619 13.500006,0.999961371 L6.5,0.999961969 C5.67157288,0.999961969 5,1.67153484 5,2.49996197 L5,18.5 C5,19.3284271 5.67157288,20 6.5,20 L9.71991141,20 L9.65152107,19.9230609 Z M8.5,3 C8.22385763,3 8,2.77614237 8,2.5 C8,2.22385763 8.22385763,2 8.5,2 L11.5,2 C11.7761424,2 12,2.22385763 12,2.5 C12,2.77614237 11.7761424,3 11.5,3 L8.5,3 Z M11.5,7 C12.9580333,7 14,7.86830559 14,9.5 C14,11.0594566 12.7212668,12.520866 10.2480695,13.9341216 C10.0943531,14.0219595 9.90564687,14.0219595 9.75193053,13.9341216 C7.2787332,12.520866 6,11.0594566 6,9.5 C6,7.86830559 7.04196671,7 8.5,7 C9.10077204,7 9.60746163,7.21606838 10,7.62749064 C10.3925384,7.21606838 10.899228,7 11.5,7 Z M13,9.5 C13,8.46502774 12.4419667,8 11.5,8 C11.0297465,8 10.6986523,8.22072947 10.4472136,8.7236068 C10.2629515,9.09213107 9.73704854,9.09213107 9.5527864,8.7236068 C9.30134774,8.22072947 8.97025354,8 8.5,8 C7.55803329,8 7,8.46502774 7,9.5 C7,10.5646205 7.97502869,11.7198904 10,12.9214551 C12.0249713,11.7198904 13,10.5646205 13,9.5 Z"/>
+                        </svg>
+                    </div>
+                    <h3>UX/UI Princípios</h3>
+                    <p>Foco na usabilidade e experiência do usuário para criar interfaces intuitivas e agradáveis.</p>
+                </div>
+                </div>
+        </section>
+
+        <section id="projetos" class="section-content">
+
+            <h2 id="projetos">Meus Projetos</h2>
+            <h3>Confira alguns dos meus trabalhos</h3>
+
+            <div class="projetos-grid">
+                <article class="projeto-card">
+                    <img src="https://raw.githubusercontent.com/adrianoribeirodacosta/adrianoribeirodacosta/refs/heads/main/assets/img/projeto1.jpg" alt="Dashbaord" class="zoomable-image" data-alt="Dashboard de Fluxos de Processo Interativo">
+                    <h3>Dashboard</h3>
+                    <p>Para otimizar a tomada de decisões, desenvolvi este dashboard que oferece uma visão clara e interativa dos fluxos de processo,
+                         com filtros dinâmicos. Complementando essa funcionalidade, o ícone Excel à direita permite a exportação dos dados exibidos,
+                          dando ao usuário total autonomia para aplicar suas próprias abordagens analíticas. Este projeto ilustra a forte integração
+                           entre soluções de back-end robustas e interfaces front-end intuitivas.</p>
+                </article>
+
+                <article class="projeto-card">
+                    <img src="https://raw.githubusercontent.com/adrianoribeirodacosta/adrianoribeirodacosta/refs/heads/main/assets/img/projeto2.jpg" alt="Verificação de Autenticidade de Certificado" class="zoomable-image" data-alt="Verificação de Certificado">
+                    <h3>Sistema de Verificação de Certificados</h3>
+                    <p>
+                        Solução web em <strong>PHP</strong> para garantir a <strong>autenticidade de certificados de treinamento</strong>.
+                         Com uma interface de consulta pública protegida por captcha, o sistema também oferece um sistema de gestão completo
+                          com múltiplos níveis de acesso para usuários, otimizando o cadastro de alunos, cursos e a emissão de certificados.
+                    </p>
+                </article>
+
+                <article class="projeto-card">
+                    <img src="https://github.com/adrianoribeirodacosta/adrianoribeirodacosta/blob/main/assets/img/projeto3.jpg?raw=true" alt="Intranet" class="zoomable-image" data-alt="Intranet - Área restrita">
+                    <h3>Intranet Corporativa</h3>
+                    <p>
+                        Desenvolvi uma <strong>Intranet com controle de acesso</strong> para uma área restrita de colaboradores. Este sistema
+                         garante que apenas funcionários autorizados, com login e senha gerenciados pelo departamento de TI, acessem informações
+                          e recursos internos, complementando o site público da corporação e otimizando a comunicação interna.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="inspiracao" class="section-content">
+            <h2>Minha Inspiração</h2>
+            <aside class="inspiracao-aside">
+                <div class="inspiracao-conteudo">
+                    <h3>O Farol do Entendimento</h3>
+                    <blockquote>
+                        <p>Nos labirintos da ignorância e nas armadilhas da doutrinação, o entendimento é nosso farol mais potente. Estudar não é apenas acumular fatos, mas cultivar a capacidade de questionar, de discernir e de resistir às vozes que clamam por uniformidade. É na mente iluminada que as sementes da intolerância murcham e o totalitarismo encontra seu limite.</p>
+                    </blockquote>
+                    <footer>— Inspirado em Carl Sagan, Hannah Arendt e George Orwell</footer> <div class="aside-border"></div>
+                </div>
+                <div class="inspiracao-imagem">
+                    <img src="https://adrianoribeirodacosta.github.io/adrianoribeirodacosta/assets/img/farol.jpg" alt="Farol">
+                </div>
+            </aside>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <div class="container">
+                <h2>Contato</h2> 
+
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <h3>Envie uma Mensagem</h3>
+                        <form id="contactForm" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Nome:<span class="error-message" id="name-error"></span></label>
+                                <input type="text" id="name" name="name" required>                                
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail: <span class="error-message" id="email-error"></span></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Assunto:<span class="error-message" id="subject-error"></span></label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem:<span class="error-message" id="mensagem-error"></span></label>
+                                <textarea id="mensagem" required></textarea>
+                            </div>
+                            <div id="success-message" class="success-message"></div>
+                            <button type="submit" class="btn">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>Email: adriano.programadorweb@gmail.com</p>
+        <p>&copy; 2025 Adriano Ribeiro da Costa</p>
+    </footer>
+
+    <a href="#" class="back-to-top" title="Voltar ao Topo">↑</a> 
+
+    <div id="imageModal" class="modal">
+        <span class="close-button">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script src="js/script.js" defer></script>
+    <script src="js/valida-form.js" defer></script>
+    
+</body>
+</html>

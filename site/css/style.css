@@ -1,0 +1,1074 @@
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    --color-header: white;
+    --background-color: #f4f4f4;
+    --color-about-text: black;
+    --color-title: #333;
+    --background-habilidades: #f9f9f9;
+    --background-color-skill-card: #fff;
+    --background-color-projeto-card: #fff;
+    --color-projeto-card-p: #666;
+}
+
+html[data-theme="dark"]{
+    --color-header: #d6d3d3;
+    --background-color: black;
+    --color-about-text: #d6d3d3;
+    --color-title: #d6d3d3;
+    --background-habilidades: #333;
+    --background-color-skill-card: #a0abaa;
+    --background-color-projeto-card: #a0abaa;
+    --color-projeto-card-p: #000;
+}
+
+/* Reset básico para começar do zero */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Aplicando a font do Google Roboto a todo o corpo */
+    line-height: 1.6;
+    background-color: var(--background-color);    
+}
+
+/* --- Ajuste para o main (para ele ocupar toda a largura) --- */
+main {
+    width: 100%; /* Garante que o main ocupe 100% da largura disponível */
+    max-width: none; /* Remove qualquer limite de largura que possa ter sido aplicado aqui */
+    margin: 0; /* Remove margens automáticas que poderiam centralizar e limitar a largura */
+    padding: 0; /* Remove padding que poderiam limitar o conteúdo interno */
+}
+
+/* --- Header com Imagem de Fundo --- */
+.main-header {
+    background: url('https://raw.githubusercontent.com/adrianoribeirodacosta/adrianoribeirodacosta/refs/heads/main/assets/img/header.jpg') no-repeat center center/cover;
+    color: var(--color-header);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.main-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.my-name { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 3em;
+    font-optical-sizing: auto;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.tagline {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.profile-photo { 
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 3px solid var(--color-header); 
+    margin-bottom: 20px;
+    object-position: 50% 30%;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: inherit; 
+    object-position: inherit; 
+    border-radius: inherit; 
+}
+
+.main-nav ul {
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.main-nav a {
+    color: var(--color-header);
+    text-decoration: none; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 1.2em;
+    transition: text-decoration 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 5px; 
+    text-decoration-color: #f0f0f0;
+}
+
+
+.section-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px 90px 20px;
+    box-sizing: border-box;
+}
+
+.section-content:nth-of-type(even) {
+    background-color: var(--background-habilidades);
+}
+
+/* --- Seção Habilidades --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    justify-items: center;
+    align-items: stretch;
+}
+
+/* Para telas de tablet ou laptops menores */
+@media (max-width: 992px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Para telas de celular */
+@media (max-width: 576px) {
+    .skills-grid {
+        /* Geralmente, em celulares, 1 coluna é o ideal para melhor experiência */
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.skill-card {
+    background-color: var(--background-color-skill-card);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px); /* Efeito de levantar no hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada no hover */
+}
+
+.skill-card h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #666;
+    flex-grow: 1;
+}
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.skill-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #333;
+}
+
+.skill-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.skill-card p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* --- Ajuste específico para o ícone PHP --- */
+.skill-card--php .skill-icon svg {
+    width: 90px;
+    height: 90px;
+}
+
+/* --- Ajuste específico para o ícone MySQL --- */
+.skill-card--mysql .skill-icon svg {
+    width: 80px;  
+    height: 80px;
+}
+
+/* --- Ajuste específico para o ícone Python --- */
+.skill-card--python .skill-icon svg {
+    width: 70px;
+    height: 70px;
+}
+
+/* --- Ajuste específico para o ícone Fluig --- */
+.skill-card--fluig .skill-icon svg {
+    width: 65px;
+    height: 65px;
+}
+
+h2 { /* Títulos das seções */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    color: var(--color-title);
+    margin-bottom: 20px;
+    text-align: center;
+    scroll-margin-top: 80px;
+}
+
+h3 { /* Títulos das seções */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--color-title);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p, li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.project-item {
+    background-color: #eee;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.extra-info {
+    padding: 40px 20px;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.projeto-card {
+    background-color: var(--background-color-projeto-card);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.projeto-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #eee;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.projeto-card h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+}
+
+.projeto-card p {
+    font-size: 0.95em;
+    color: var(--color-projeto-card-p);
+    padding: 0 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.projeto-card .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.projeto-card .btn:hover {
+    background-color: #0056b3;
+}
+
+.projeto-card:hover img {
+    transform: scale(1.1);
+}
+
+/* --- Modal (Lightbox) CSS --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    animation: zoomIn 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* Animação para o modal */
+@keyframes zoomIn {
+    from {transform: scale(0.8);}
+    to {transform: scale(1);}
+}
+
+#caption {
+    margin: 15px auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Para telas menores */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+        max-width: 95%;
+        max-height: 90%;
+    }
+    #caption {
+        width: 90%;
+    }
+}
+
+/* --- Rodapé --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+/* --- Responsividade (Media Queries) --- */
+@media (max-width: 768px) {
+    .my-name {
+        font-size: 2.5em;
+    }
+    .tagline {
+        font-size: 1em;
+    }
+    .main-nav li {
+        display: block;
+        margin: 10px 0;
+    }
+    .section-content, .extra-info {
+        padding: 40px 15px;
+    }
+    .projetos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- Seção Inspiração --- */
+#inspiracao {
+    padding: 60px 20px;
+    background-color: var(--background-color);
+    text-align: center;
+    margin-bottom: 125px;
+    
+}
+
+#inspiracao h2 {
+    font-size: 2.5em;
+    color: var(--color-title);;
+    margin-bottom: 40px;
+}
+
+.inspiracao-aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.inspiracao-conteudo {
+    flex: 2;
+    padding: 40px;
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.inspiracao-conteudo h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    font-style: normal;
+}
+
+.inspiracao-conteudo blockquote {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6em;
+    line-height: 1.5;
+    font-style: italic;
+    color: #444;
+}
+
+.inspiracao-conteudo blockquote p {
+    margin: 0;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1;
+    text-align: justify;
+}
+
+/* Aspas de Abertura */
+.inspiracao-conteudo blockquote p::before {
+    content: "“";
+    font-size: 4em;
+    color: #ccc;
+    position: absolute;
+    left: -15px;
+    top: 0;
+    opacity: 0.6;
+    z-index: 0;
+    line-height: 1;
+}
+
+/* Aspas de Fechamento */
+.inspiracao-conteudo blockquote p::after {
+    content: "”";
+    font-size: 4em;
+    color: #ccc;
+    position: absolute;
+    right: 20px;
+    bottom: -0.4em;
+    opacity: 0.6;
+    z-index: 0;
+    line-height: 1;
+}
+
+.inspiracao-conteudo footer {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #888;
+    text-align: right;
+    font-style: normal;
+    padding: 0 20px;
+    background-color: transparent;
+    border-radius: 0;
+    display: block;
+    align-self: flex-end;
+}
+
+.aside-border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background-color: #007bff;
+    border-radius: 10px 0 0 10px;
+}
+
+.inspiracao-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.inspiracao-imagem img {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
+    border-radius: 8px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+}
+
+/* --- Responsividade para a seção Inspiração --- */
+@media (max-width: 768px) {
+    .inspiracao-aside {
+        flex-direction: column;
+    }
+
+    .inspiracao-conteudo {
+        order: 2;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .inspiracao-conteudo h3 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+
+    .inspiracao-conteudo blockquote {
+        font-size: 1.4em;
+    }
+
+    .inspiracao-conteudo blockquote p {
+        padding: 0;
+    }
+
+    .inspiracao-conteudo blockquote p::before,
+    .inspiracao-conteudo blockquote p::after {
+        display: none;
+    }
+
+    .inspiracao-conteudo footer {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 1.1em;
+        padding: 0;
+        border-radius: 0;
+        align-self: center;
+    }
+
+    .aside-border {
+        left: 50%;
+        width: 80%;
+        height: 8px;
+        top: 0;
+        transform: translateX(-50%);
+        border-radius: 10px 10px 0 0;
+    }
+
+    .inspiracao-imagem {
+        order: 1;
+        padding: 20px;
+        background-color: transparent;
+    }
+
+    .inspiracao-imagem img {
+        max-height: 200px;
+        margin-left: 0;
+    }
+}
+
+/* --- Seção Contato --- */
+.contact-section {
+    padding: 30px 0 120px 0;
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: url('https://adrianoribeirodacosta.github.io/adrianoribeirodacosta/assets/img/bg-contato-novo.jpg') no-repeat center center/cover;    
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.contact-section h2,
+.contact-section .container {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
+
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-image-container {
+    text-align: center;
+}
+
+.contact-image-container img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.contact-form-container h3,
+.form-group label {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="subject"],
+.form-group textarea {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    font-size: 1.05em;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-text-fill-color: white;
+    caret-color: white;
+    margin-bottom: 15px;
+}
+
+.form-group:last-of-type input,
+.form-group:last-of-type textarea {
+    margin-bottom: 0;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: none;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="subject"]:focus,
+.form-group textarea:focus {
+    border-color: rgba(255, 255, 255, 0.8);
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.form-group input[type="text"]:hover,
+.form-group input[type="email"]:hover,
+.form-group input[type="subject"]:hover,
+.form-group textarea:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/* --- SOLUÇÃO DE LEGIBILIDADE PARA O AUTOCOMPLETAR --- */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    /* FORÇA O TEXTO PARA PRETO (OU UMA COR ESCURA QUE CONTRASTE COM O FUNDO) */
+    -webkit-text-fill-color: #333 !important; /* Texto escuro para autocompletar */
+    color: #333 !important; /* Adiciona também a propriedade color para compatibilidade */
+    
+    /* FUNDO MAIS CLARO PARA AUTOPREENCHIMENTO */
+    -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.9) inset !important;
+    box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.9) inset !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: none !important; 
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.error-message {
+    color: #FF3333;
+    font-size: 0.95em;
+    margin-top: -25px;
+    display: block;
+    text-align: center;
+    min-height: 20px;
+    font-weight: bold;
+    text-shadow: 
+        0 0 1px #FF3333,
+        0 0 4px #FF3333;
+    transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.success-message {
+    color: white !important;
+    font-size: 1.05em;
+    font-weight: 200;
+    margin-top: -20px;
+    text-align: justify;
+    display: block;
+    padding: 10px;
+    text-shadow: 
+        0 0 1px white,
+        0 0 2px white;
+    transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 18px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 25px 10px rgba(0, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Media Queries para Responsividade (ajuste para empilhar em telas menores) */
+@media (max-width: 768px) {
+    
+    .contact-form-container,
+    .contact-image-container {
+        max-width: 90%;
+        margin: 0 auto 20px auto;
+    }
+}
+
+.about-content-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.about-image {
+    flex: 0 0 400px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    color:var(--color-about-text);
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.3em;
+}
+
+@media (max-width: 768px) {
+    .about-content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-image {
+        margin-bottom: 20px;
+        flex: none;
+        max-width: 80%;     }
+}
+
+/* --- Botão Voltar ao Topo --- */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    z-index: 1000;
+    display: inline-block;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+}
+
+/* Rolagem suave em CSS */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- Estilo do Botão Switch (Modo Noturno) --- */
+
+/* Esconde o checkbox real */
+.theme-switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+/* O contêiner principal do switch (o label) */
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 15px;
+    cursor: pointer;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+/* O trilho do switch (a barra de fundo) */
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+/* O "thumb" ou bolinha que desliza */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%; /* Torna a bolinha redonda */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para dar profundidade */
+}
+
+/* Estilo para o trilho quando o checkbox está "checked" (modo noturno ativo) */
+.theme-switch input:checked + .slider {
+    background-color: #666; /* Cor do trilho no modo noturno (azul) */
+}
+
+/* Move o "thumb" para a direita quando o checkbox está "checked" */
+.theme-switch input:checked + .slider:before {
+    transform: translateX(26px); /* Move a bolinha para a direita */
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+/* Estilo para a bolinha redonda (já definido no .slider:before) */
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* --- ESTILOS DOS ÍCONES (SOL E LUA) --- */
+
+.slider .icon {
+    position: absolute;     
+    line-height: 1;
+    transition: opacity 0.4s, transform 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.slider .icon.sun {
+    left: 0; /* Sol começa à esquerda */
+    opacity: 1; /* Visível no início (modo claro) */
+    transform: translateX(0); /* Posição inicial */
+}
+
+.slider .icon.sun svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.slider .icon.moon {
+    right: 0; /* Lua começa à direita */
+    opacity: 0; /* Invisível no início (modo claro) */
+    transform: translateX(0); /* Posição inicial */
+}
+
+.slider .icon.moon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Quando o checkbox está "checked" (modo noturno) */
+.theme-switch input:checked + .slider .icon.sun {
+    opacity: 0; /* Sol some */
+    transform: translateX(-10px); /* Move o sol um pouco para fora para uma transição suave */
+}
+
+.theme-switch input:checked + .slider .icon.moon {
+    opacity: 1; /* Lua aparece */
+    transform: translateX(0); /* Garante que a lua esteja na posição final */
+}
+
+.slider .icon.sun {
+    left: 8px; /* Ajusta a posição horizontal do sol */
+}
+
+.slider .icon.moon {
+    right: 8px; /* Ajusta a posição horizontal da lua */
+}
